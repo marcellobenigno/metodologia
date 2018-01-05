@@ -25,7 +25,6 @@ Veja o que acontece se fizermos apenas o union, sem o buffer:
 ```sql
   SELECT
       graurisco,
-      -- valor abaixo: 0.000000005
       ST_MemUnion(the_geom),
       risco
     FROM assentamentohumano
