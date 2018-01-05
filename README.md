@@ -82,6 +82,7 @@ A consulta que eu fiz foi:
 SELECT
   graurisco,
   risco,
+  -- OBS: fiz o alias apenas para não quebrar as consultas posteriores já existentes:
   ST_UnaryUnion(st_buffer(grp, 0.00001)) AS ST_MemUnion
 FROM
   (SELECT
